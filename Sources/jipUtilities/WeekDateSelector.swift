@@ -14,21 +14,21 @@ import SwiftUI
 ///
 /// This depends in the current calendar (timezone and locale), however, it has not been tested in other time zones and locales.
 @available(iOS 16.0, *)
-struct WeekDateSelector: View {
+public struct WeekDateSelector: View {
     
     @Binding private var selection: Set<DateComponents>
     private let range: Range<Date>
     
     
     
-    init(selection: Binding<Set<DateComponents>>, range: Range<Date> = Date.distantPast..<Date.distantFuture) {
+    public init(selection: Binding<Set<DateComponents>>, range: Range<Date> = Date.distantPast..<Date.distantFuture) {
         _selection = selection
         self.range = range
     }
     
     
     
-    var body: some View {
+    public var body: some View {
         MultiDatePicker("", selection: $selection, in: range)
             .onChange(of: selection) { [selection] newSelection in
                 
