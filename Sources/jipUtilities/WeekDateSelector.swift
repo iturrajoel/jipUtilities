@@ -20,7 +20,11 @@ public struct WeekDateSelector: View {
     private let range: Range<Date>
     
     
-    
+    /// Initializer
+    ///
+    /// - parameters:
+    ///  - selection: The binding to a Set of date components that will contain the selected week.
+    ///  - range: The range to apply to MultiDatePicker.
     public init(selection: Binding<Set<DateComponents>>, range: Range<Date> = Date.distantPast..<Date.distantFuture) {
         _selection = selection
         self.range = range
