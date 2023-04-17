@@ -9,7 +9,7 @@ import SwiftUI
 
 
 /// A grid that has variable columns in each row, allowing to fit as many as views it's possible in each row.
-struct SmartVerticalGrid: Layout {
+public struct SmartVerticalGrid: Layout {
     
     
     
