@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "jipUtilities",
     platforms: [
-        .iOS(.v16), .macOS(.v10_13)
+        .iOS(.v16), .macOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
